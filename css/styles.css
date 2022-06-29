@@ -1,0 +1,23 @@
+/* белый цвет #FFFFFF */
+/* цвет основного  текста #757575 */
+/* вторичный цвет темного текста #212121  */
+/* акцент #2196F3 */
+/* вторичный цвет фона #F5F4FA */
+/* цвет footer #2F303A */
+
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --primary-white-color: #ffffff;
+  --secondary-gray-color: #f5f4fa;
+  --footer-color: #2f303a;
+}
+body {
+  color: var(--primary-text-color);
+  background-color: var(--primary-white-color);
+}
+
+.list {
+  list-style: none;
+}
