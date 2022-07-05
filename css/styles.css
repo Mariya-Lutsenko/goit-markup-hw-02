@@ -77,10 +77,11 @@ body {
 /*styles index.html  */
 
 /* hero */
+.hero {
+  background-color: var(--footer-color);
+}
 .hero-title {
   color: var(--primary-white-color);
-  background-color: black;
-  /* фон  пока поставила, чтобы было видно белую надпись */
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -109,7 +110,6 @@ body {
 
 .section-title {
   color: var(--title-text-color);
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
@@ -118,12 +118,11 @@ body {
 /* features */
 .features-list .title {
   color: var(--title-text-color);
-  font-weight: 700;
+  font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
 }
 .features-list p {
-  font-size: 14px;
   line-height: 1.71;
 }
 
@@ -149,6 +148,7 @@ body {
 
 .filter-button {
   cursor: pointer;
+  font-family: inherit;
   color: var(--title-text-color);
   background-color: var(--secondary-gray-color);
   border-color: transparent;
@@ -166,10 +166,14 @@ body {
   background-color: var(--accent-color);
 }
 
+.filter-button.current {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+
 /* portfolio projects */
 .project-title {
   color: var(--title-text-color);
-  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -182,20 +186,16 @@ body {
 }
 
 /* footer */
+.footer {
+  background-color: var(--footer-color);
+}
 .logo-footer {
   color: var(--primary-white-color);
-  background-color: #000000;
-  /* фон  пока поставила, чтобы было видно белую надпись */
   font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
-}
-
-.logo-footer:hover,
-.logo-footer:focus {
-  color: var(--accent-color);
 }
 
 .logo-footer > span {
@@ -207,8 +207,6 @@ body {
 }
 .address-item {
   color: var(--primary-white-color);
-  background-color: black;
-  /* фон  пока поставила, чтобы было видно белую надпись */
   font-style: normal;
   font-weight: 400;
   line-height: 1.71;
@@ -217,16 +215,12 @@ body {
 
 .mailtel-item {
   color: var(--mail-tel-color);
-  background-color: black;
-  /* фон  пока поставила, чтобы было видно белую надпись */
   font-style: normal;
   font-weight: 400;
   line-height: 1.71;
   text-decoration: none;
 }
 
-.address-item:hover,
-.address-item:focus,
 .mailtel-item:hover,
 .mailtel-item:focus {
   color: var(--accent-color);
